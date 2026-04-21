@@ -1,48 +1,84 @@
-# Gaze 👁️
-**The Premium Productivity Companion for your MacBook Notch.**
+# 👁️ Gaze
 
-**Gaze** transforms your MacBook's notch from a static gap into a dynamic productivity powerhouse. It features a sleek, glass-morphic overlay that manages your focus timers and interactions with style.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/huddlecode0/Huddle-Asserts/refs/heads/main/icon.png" width="128" height="128" alt="Gaze Icon">
+  <br>
+  <b>The Premium Productivity Companion for your MacBook Notch.</b>
+  <br>
+  <i>Transforming the gap into a dynamic, watchful focus experience.</i>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-macOS%2014.0+-black?style=for-the-badge&logo=apple" alt="macOS">
+  <img src="https://img.shields.io/badge/Swift-6.0-orange?style=for-the-badge&logo=swift" alt="Swift">
+  <img src="https://img.shields.io/github/v/release/AtharvaBari/Gaze?style=for-the-badge&color=blue" alt="Release">
+  <img src="https://img.shields.io/github/license/AtharvaBari/Gaze?style=for-the-badge&color=lightgrey" alt="License">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/huddlecode0/Huddle-Asserts/refs/heads/main/0421.gif" alt="macOS">
+  
 ---
 
-## ✨ Features
+## ✨ Overview
 
-- **Dynamic Notch Integration**: Your productivity timer, right where you gaze most.
-- **Modern Sidebar Experience**: A redesigned settings interface with a clean navigation-split view.
-- **Cinematic Welcome**: A stunning neon-grid intro to welcome you to the experience.
-- **Sparkle Updates**: Stay up-to-date with automatic, signed software updates. 
-- **Privacy First**: Minimalist, secure, and focused entirely on your productivity.
+**Gaze** is more than just a Pomodoro timer. It’s a native macOS utility that utilizes the hardware notch on modern MacBook Pros and Airs to create a "Dynamic Island" focus HUD. 
+
+Featuring a procedural **Mascot** that tracks your cursor with its eyes, Gaze adds a layer of interactive life to your screen while keeping you on track with glass-morphic timers and smooth, system-native animations.
+
+## 🌟 Key Features
+
+- 📱 **Dynamic Notch Integration**: A persistent, non-intrusive HUD that hugs the camera notch.
+- 👁️ **The Gaze Mascot**: A smooth, 2D procedural animation that watches your every move (cursor tracking).
+- 🌊 **Liquid Animations**: Built with SwiftUI spring physics for that "Apple-smooth" expansion feel.
+- 🛠️ **Sidebar Control Center**: A clean, modern settings interface with navigation-split views.
+- ⚡ **Cinematic Intro**: Experience a stunning neon-grid welcome every time you launch the app.
+- 🔄 **Sparkle Updates**: Secure, automatic software updates to keep your experience fresh.
 
 ## 🚀 Getting Started
 
 ### Installation
-1. Download the latest **`Gaze.dmg`** from our [Releases](https://github.com/AtharvaBari/Gaze/releases) page.
-2. Drag **Gaze** into your **Applications** folder.
-3. Launch and enjoy the cinematic intro!
+1. Download the latest **`Gaze.dmg`** from the [Releases](https://github.com/AtharvaBari/Gaze/releases) page.
+2. Drag **Gaze** to your Applications folder.
+3. Open the app and grant **Accessibility Permissions** (required for the mascot to track your cursor).
 
-### Development
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/AtharvaBari/Gaze.git
-   cd Gaze
-   ```
-2. **Generate the Project**:
-   We use `xcodegen` to manage project files. Run:
-   ```bash
-   ./xcodegen/bin/xcodegen
-   ```
-3. **Open and Build**:
-   ```bash
-   open Gaze.xcodeproj
-   ```
+### For Developers
+Gaze is built using modern Swift standards and `xcodegen`.
 
-## 🛠️ Build & Distribution
-We've included automation scripts for your convenience:
-- **Build DMG**: Run `./scripts/build_dmg.sh` to package the app for sharing.
-- **Setup Updates**: Run `./scripts/setup_updates.sh` to manage Sparkle keys and appcasts.
+```bash
+# 1. Clone the repo
+git clone https://github.com/AtharvaBari/Gaze.git
+cd Gaze
+
+# 2. Generate the Xcode Project
+./xcodegen/bin/xcodegen
+
+# 3. Open and Build
+open Gaze.xcodeproj
+````
+
+## 🗺️ Upcoming Features
+
+- 🛠️ **Custom Mascot Themes**: Unlock new skins and personalities for your digital focus companion.
+- 📊 **Insight Analytics**: Track your focus sessions with beautiful, interactive heatmaps and trends.
+- 🔔 **Focus Mode Sync**: Automatically toggle macOS "Do Not Disturb" during active sessions.
+- 📅 **Calendar Integration**: See your upcoming meetings directly in the Notch HUD.
+
+
+## 🛠️ Tech Stack
+
+  - **UI Framework:** SwiftUI + AppKit (NSPanel)
+  - **Animation:** SwiftUI Canvas & TimelineView
+  - **Persistence:** SwiftData
+  - **Lifecycle:** Swift 6 Concurrency
+  - **Distribution:** Sparkle Framework
 
 ## 📄 License
-This project is licensed under the **MIT License** – see the `LICENSE` file for details.
 
----
-Built with ❤️ for the macOS community.
+Gaze is available under the **MIT License**. See the `LICENSE` file for more info.
+
+-----
+
+<p align="center"\>
+Built with 🤍 by <a href="https://github.com/AtharvaBari">Atharva Bari</a>
+</p\>
