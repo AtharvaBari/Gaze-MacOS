@@ -32,7 +32,7 @@ fi
 
 # Extract version for the filename
 VERSION=$(defaults read "$(pwd)/$APP_DIR/Contents/Info.plist" CFBundleShortVersionString)
-DMG_NAME="${APP_NAME}-${VERSION}.dmg"
+DMG_NAME="${APP_NAME}_v${VERSION}.dmg"
 DMG_TEMP="temp_${DMG_NAME}"
 
 echo "📦 Creating DMG: $DMG_NAME"

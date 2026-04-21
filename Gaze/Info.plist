@@ -22,5 +22,11 @@
 	<string>2</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>SUFeedURL</key>
+	<string>https://AtharvaBari.github.io/Gaze/appcast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUPublicEDKey</key>
+	<string>rIBVwBzLoQwef7fvTQZEsWXSvFDUK46zI6qji9GG95g=</string>
 </dict>
 </plist>

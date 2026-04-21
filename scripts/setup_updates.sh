@@ -44,16 +44,16 @@ generate_new_keys() {
 }
 
 release_update() {
-    # Find the latest versioned DMG
-    VERSIONED_DMG=$(ls Gaze-*.dmg 2>/dev/null | sort -V | tail -n 1)
+    # Find the latest versioned DMG (Gaze_v1.0.1.dmg)
+    VERSIONED_DMG=$(ls Gaze_v*.dmg 2>/dev/null | sort -V | tail -n 1)
 
     if [ -z "$VERSIONED_DMG" ]; then
-        echo "❌ Error: No versioned Gaze-*.dmg found. Run ./scripts/build_dmg.sh first."
+        echo "❌ Error: No versioned Gaze_v*.dmg found. Run ./scripts/build_dmg.sh first."
         exit 1
     fi
 
-    # Extract version from the filename (e.g., Gaze-1.0.1.dmg -> 1.0.1)
-    VERSION=$(echo "$VERSIONED_DMG" | sed 's/Gaze-//' | sed 's/.dmg//')
+    # Extract version from the filename (e.g., Gaze_v1.0.1.dmg -> 1.0.1)
+    VERSION=$(echo "$VERSIONED_DMG" | sed 's/Gaze_v//' | sed 's/.dmg//')
 
     echo -e "${BLUE}📦 Processing update for $VERSIONED_DMG (v$VERSION)...${NC}"
     
